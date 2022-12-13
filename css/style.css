@@ -15,6 +15,7 @@ body {
 h1 {
   font-weight: bold;
   font-size: 60px;
+  color: #333333;
 }
 p {
   font-weight: 400;
@@ -362,7 +363,7 @@ li {
 }
 
 .bar {
-  background-color: rgb(245, 245, 245);
+  background-color: #80808000;
   display: flex;
   flex: 1 0 0px;
   flex-flow: row nowrap;
@@ -539,10 +540,17 @@ li {
   font-size: 2.5vw;
 }
 
+h2 {
+  color: #333333;
+}
+
 .contente {
   position: absolute;
   top: 0;
   left: 0;
+}
+h3 {
+  color: #808080;
 }
 
 .carte2 {
@@ -556,7 +564,7 @@ li {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+
   z-index: -1;
   transition: opacity 0.1s ease-out;
   opacity: 0;
@@ -658,11 +666,15 @@ a.medium_line:hover::before {
 .div5:hover {
   box-shadow: 10px 9px 0px 1px rgb(189, 213, 255);
 }
-.div1:hover,
+
 .div4:hover {
   box-shadow: 10px 9px 0px 1px rgb(255, 209, 148);
 }
 
+.div1 {
+  background: white;
+  box-shadow: 10px 9px 0px 1px #373230;
+}
 .div3 .kok {
   opacity: 0;
   transition: all 0.1s ease-out;
@@ -801,8 +813,7 @@ a.medium_line:hover::before {
   display: flex;
   flex: 0 0 auto;
   flex-flow: column nowrap;
-  height: 100%;
-  width: 100%;
+
   padding: 0px;
 }
 
@@ -893,7 +904,6 @@ a.medium_line:hover::before {
 }
 
 .div1 {
-  background: url("../files/projects/A very new world/intro.png") no-repeat;
   background-size: 450px auto;
 }
 .skills {
@@ -943,4 +953,37 @@ a.medium_line:hover::before {
   object-position: center;
   object-fit: cover;
   image-rendering: auto;
+}
+
+.noisy {
+  background-color: #f7f3f1;
+  background-image: url(../img/Rectangle.png);
+  margin: 0;
+}
+.bip {
+  transition: 0.3s;
+}
+.bip:hover {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(14.5px);
+  box-shadow: 1px 10px 14px 3px rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 1px 10px 14px 3px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 1px 10px 14px 3px rgba(0, 0, 0, 0.47);
+}
+
+.arrow {
+  transition: transform 0.3s ease-in-out;
+  filter: invert(1);
+}
+
+.arrow:hover {
+  transform: rotate(-45deg);
+  filter: invert(0);
+}
+.more {
+  transition: transform 0.3s ease-in-out;
+}
+.more:hover {
+  color: black;
 }
